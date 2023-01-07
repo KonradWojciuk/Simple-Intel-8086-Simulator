@@ -185,5 +185,114 @@ namespace Procesor8086
                 PrintDx.Text = holder;
             }
         }
+
+        private string _al = "";
+        private string _bl = "";
+        private string _cl = "";
+        private string _dl = "";
+
+        private void PrintAl()
+        {
+            PrintAx.Text = _al + _ah;
+        }
+        private void PrintBl()
+        {
+            PrintBx.Text = _bl + _bh;
+        }
+        private void PrintCl()
+        {
+            PrintCx.Text = _cl + _ch;
+        }
+        private void PrintDl()
+        {
+            PrintDx.Text = _dl + _dh;
+        }
+        
+        private void InputL(object sender, KeyEventArgs e)
+        {
+            var field = sender as TextBox;
+            var fieldName = field.Name;
+
+            switch (fieldName)
+            {
+                case "InputAL":
+                    if (e.Key == Key.Return)
+                    {
+                        _al = InputAL.Text;
+                        PrintAl();
+                    }
+                    break;
+                case "InputBL":
+                    if (e.Key == Key.Return)
+                    {
+                        _bl = InputBL.Text;
+                        PrintBl();
+                    }
+                    break;
+                case "InputCL":
+                    if (e.Key == Key.Return)
+                    {
+                        _cl = InputCL.Text;
+                        PrintCl();
+                    }
+                    break;
+                case "InputDL":
+                    if (e.Key == Key.Return)
+                    {
+                        _dl = InputDL.Text;
+                        PrintDl();
+                    }
+                    break;
+            }
+            
+        }
+        
+        private string _ah = "";
+        private string _bh = "";
+        private string _ch = "";
+        private string _dh = "";
+
+
+        private void InputH(object sender, KeyEventArgs e)
+        {
+            var field = sender as TextBox;
+            var fieldName = field.Name;
+
+            switch (fieldName)
+            {
+                case "InputAH":
+                    if (e.Key == Key.Return)
+                    {
+                        _ah = InputAH.Text;
+                        PrintAl();
+                    }
+
+                    break;
+                case "InputBH":
+                    if (e.Key == Key.Return)
+                    {
+                        _bh = InputBH.Text;
+                        PrintBl();
+                    }
+
+                    break;
+                case "InputCH":
+                    if (e.Key == Key.Return)
+                    {
+                        _ch = InputCH.Text;
+                        PrintCl();
+                    }
+
+                    break;
+                case "InputDH":
+                    if (e.Key == Key.Return)
+                    {
+                        _dh = InputDH.Text;
+                        PrintDl();
+                    }
+
+                    break;
+            }
+        }
     }
 }

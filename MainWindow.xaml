@@ -87,23 +87,23 @@
         <Button Click="RandomAll" Grid.Row="1" Grid.Column="8" Style="{StaticResource MainButton}" Content="Random Register" Width="120"></Button>
         
         <TextBlock Grid.Row="2" Grid.Column="2" Text="AL"></TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputAL" Grid.Row="2" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputL"></TextBox>
         <TextBlock Grid.Row="3" Grid.Column="2" Text="BL"></TextBlock>
-        <TextBox Grid.Row="3" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputBL" Grid.Row="3" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputL"></TextBox>
         <TextBlock Grid.Row="4" Grid.Column="2" Text="CL"></TextBlock>
-        <TextBox Grid.Row="4" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputCL" Grid.Row="4" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputL"></TextBox>
         <TextBlock Grid.Row="5" Grid.Column="2" Text="DL"></TextBlock>
-        <TextBox Grid.Row="5" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputDL" Grid.Row="5" Grid.Column="3" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputL"></TextBox>
         
         
         <TextBlock Grid.Row="2" Grid.Column="4" Text="AH"></TextBlock>
-        <TextBox Grid.Row="2" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputAH" Grid.Row="2" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputH"></TextBox>
         <TextBlock Grid.Row="3" Grid.Column="4" Text="BH"></TextBlock>
-        <TextBox Grid.Row="3" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputBH" Grid.Row="3" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputH"></TextBox>
         <TextBlock Grid.Row="4" Grid.Column="4" Text="CH"></TextBlock>
-        <TextBox Grid.Row="4" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputCH" Grid.Row="4" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputH"></TextBox>
         <TextBlock Grid.Row="5" Grid.Column="4" Text="DH"></TextBlock>
-        <TextBox Grid.Row="5" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2"></TextBox>
+        <TextBox x:Name="InputDH" Grid.Row="5" Grid.Column="5" Style="{StaticResource MainBox}" Width="40" MaxLength="2" KeyDown="InputH"></TextBox>
         
         <Button x:Name="MovAXBX" Click="Move" Grid.Row="2" Grid.Column="6" Style="{StaticResource MainButton}" Content="Move AX BX"></Button>
         <Button x:Name="MovAXCX" Click="Move" Grid.Row="2" Grid.Column="7" Style="{StaticResource MainButton}" Content="Move AX CX"></Button>
